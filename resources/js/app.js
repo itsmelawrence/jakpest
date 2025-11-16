@@ -69,7 +69,9 @@ const swiper = new Swiper(".swiper", {
     direction: "horizontal",
     spaceBetween: 20,
     loop: false,
-
+    keyboard: {
+        enabled: true,
+    },
     pagination: {
         el: ".swiper-pagination",
     },
