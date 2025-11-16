@@ -274,6 +274,15 @@ button.button-link {
     flex-direction: column;
 }
 
+a.navigation-links.button-link.mobile-menu {
+    padding: 15px 20px;
+}
+
+a.navigation-links.button-link.mobile-menu svg {
+    width: 20px;
+    height: 20px;
+}
+
 /** LAYOUT FOR BUTTONS - GLOBAL **/
 
 a.button-link {
