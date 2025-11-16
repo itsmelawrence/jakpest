@@ -330,9 +330,9 @@ a.button-link-swiper:hover {
 /** END - LAYOUT FOR BUTTONS - GLOBAL **/
 
 .hero-container {
-    background-size: cover;
+    background-size: 125%;
     background-repeat: no-repeat;
-    background-position: 100% 50%;
+    background-position: 0% 50%;
     position: relative;
     z-index: 1;
 }
@@ -547,7 +547,8 @@ img.image-block-split {
     }
 
     .hero-container {
-        background-position: 70% 50%;
+        background-position: 50% 50%;
+        background-size: cover;
     }
 
     .hero-content-container {
