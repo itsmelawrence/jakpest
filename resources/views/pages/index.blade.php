@@ -101,7 +101,7 @@
                             <h3>Termite Control</h3>
                             <p>Prevent costly structural damage with our specialized termite treatments. We detect, eliminate, and safeguard your property from termite invasions.</p>
                             <div class="menu-item">
-                                <a href="#" class="button--swiper">Learn more</a>
+                                <a href="#" class="button-link-swiper">Learn more</a>
                             </div>
                         </div>
                     </div>

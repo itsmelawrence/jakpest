@@ -504,6 +504,10 @@ img.image-block-split {
         font-size: 1.1rem;
     }
 
+    .main-navigation-bar {
+        padding-top: 20px !important;
+    }
+
     .layout-section {
         flex-direction: column;
         margin: 50px 0;
