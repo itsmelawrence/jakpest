@@ -36,37 +36,30 @@ function handleMenuVisibility() {
     const lastItem = menuItems[menuItems.length - 1]; // mobile button
 
     if (window.matchMedia("(max-width: 1000px)").matches) {
-        // Mobile view
+        // Mobile view: hide menu items, show mobile button
         menuItems.forEach((li, index) => {
             if (li !== lastItem) {
                 li.style.display = "none";
             }
         });
-        lastItem.style.display = "block"; // keep the mobile button visible
+        lastItem.style.display = "block"; // show mobile button
     } else {
-        // Desktop view
-        menuItems.forEach((li) => {
-            li.style.display = "block";
+        // Desktop view: show menu items, hide mobile button
+        menuItems.forEach((li, index) => {
+            if (li !== lastItem) {
+                li.style.display = "block";
+            } else {
+                li.style.display = "none"; // hide mobile button
+            }
         });
     }
 }
 
+// Initial run
 handleMenuVisibility();
+
+// Listen for window resize
 window.addEventListener("resize", handleMenuVisibility);
-
-// Prevent JS from breaking if the button is not found
-if (mobileBtn) {
-    mobileBtn.addEventListener("click", (event) => {
-        event.preventDefault(); // prevents anchor jump
-
-        menuItems.forEach((li) => {
-            const isButton = li.querySelector(".mobile-menu") !== null;
-            if (!isButton) {
-                li.classList.toggle("is-hidden");
-            }
-        });
-    });
-}
 
 // =======================
 // Swiper

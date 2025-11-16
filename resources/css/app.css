@@ -491,12 +491,21 @@ img.image-block-split {
         max-width: 100%;
     }
 
+    .hero-content-container {
+        padding-top: 100px;
+        display: flex;
+    }
+
     .layout-section {
         flex-direction: column;
     }
 
     .split-content {
         width: 100%;
+    }
+
+    img.image-block-split {
+        height: 200px;
     }
 
     .top-bar-navigation .layout-section,
@@ -506,5 +515,9 @@ img.image-block-split {
 
     .custom-slider-image {
         height: 250px;
+    }
+
+    .top-bar-content:nth-child(2) {
+        display: none;
     }
 }
