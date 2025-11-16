@@ -496,8 +496,17 @@ img.image-block-split {
         display: flex;
     }
 
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
     .layout-section {
         flex-direction: column;
+        margin: 50px 0;
     }
 
     .split-content {
@@ -515,6 +524,14 @@ img.image-block-split {
 
     .custom-slider-image {
         height: 250px;
+    }
+
+    .custom-slider-content p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; /* number of lines to show */
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .top-bar-content:nth-child(2) {
