@@ -2,17 +2,20 @@
     <div class="layout-section hero-content-container">
         <div class="hero-content">
             <h1>Keep Your Home Safe With <span class="highlight-text">JAK Pest Control Services</span></h1>
-            <p>At JAK Pest Control Services, we provide safe, effective, and long-lasting solutions against pests in
+            <div class="row-group">
+                <p>At JAK Pest Control Services, we provide safe, effective, and long-lasting solutions against pests in
                 Valenzuela City and across the Luzon region—protecting your home, your family, and your peace of mind.
             </p>
             <div class="menu-item">
-                <a href="#" class="button-link">Schedule a Service Today</a>
+                <a href="#learn-more" class="button-link">Learn more</a>
+                <a href="#" class="button-link-transparent">View our services <i data-feather="arrow-right"></i></a>
+            </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="main-container">
+<section id="learn-more" class="main-container">
     <div class="layout-section layout-split-content">
         <div class="split-content image-block">
             <img src="{{ url('images/block/index1.jpg') }}" alt="Image Block" class="image-block-split box-shadow">

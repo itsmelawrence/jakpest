@@ -177,6 +177,7 @@ span:hover {
 
 .menu-item {
     display: flex;
+    column-gap: 20px;
 }
 
 .menu-item a {
@@ -303,11 +304,13 @@ a.button-link:hover {
 }
 
 a.button-link-transparent {
-    padding: 10px 25px;
+    padding: 10px 15px;
     background-color: transparent;
     color: #1a416c;
     font-weight: 700;
     text-decoration: underline;
+    display: flex;
+    column-gap: 5px;
 }
 
 a.button-link-transparent:hover {
@@ -345,7 +348,7 @@ a.button-link-swiper:hover {
 .hero-content {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 40px;
     max-width: 50%;
 }
 
@@ -378,6 +381,26 @@ a.button-link-swiper:hover {
 span.highlight-text {
     color: #2888ef;
     font-weight: 700;
+}
+
+.hero-container a.button-link-transparent {
+    color: #fff;
+}
+
+.hero-container a.button-link-transparent svg {
+    width: 16px;
+    height: 16px;
+    stroke-width: 3px;
+    transition: all 0.2s ease-in-out;
+}
+
+.hero-container a.button-link-transparent:hover {
+    background-color: unset;
+}
+
+.hero-container a.button-link-transparent:hover svg {
+    transform: translateX(10px);
+    transition: all 0.2s ease-in-out;
 }
 
 /** SPLIT BLCOK **/
@@ -473,7 +496,7 @@ img.image-block-split {
 .row-group {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 30px;
 }
 
 .swiper {
