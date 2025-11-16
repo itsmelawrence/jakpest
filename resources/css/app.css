@@ -84,13 +84,13 @@ h6 {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
     h2 {
         font-size: 2rem;
     }
     h3 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
     h4 {
         font-size: 1.3rem;
@@ -156,6 +156,10 @@ span:hover {
 .top-bar-content p,
 .top-bar-content a {
     color: #fff;
+}
+
+.top-bar-content a {
+    text-decoration: underline;
 }
 
 .top-bar .menu-item svg {
@@ -441,7 +445,8 @@ img.image-block-split {
     color: #fff;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    justify-content: space-between;
+    row-gap: 30px;
     height: 100%;
     text-align: left;
     padding: 25px 40px;
@@ -456,7 +461,18 @@ img.image-block-split {
 }
 
 .custom-slider-content p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 16px;
+}
+
+.row-group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
 .swiper {
@@ -496,6 +512,10 @@ img.image-block-split {
 /** END - SWIPER SLIDER **/
 
 @media screen and (max-width: 768px) {
+    .top-bar-content {
+        column-gap: 10px;
+    }
+
     .hero-content {
         max-width: 100%;
     }
@@ -524,6 +544,7 @@ img.image-block-split {
     .layout-section {
         flex-direction: column;
         margin: 50px 0;
+        row-gap: 30px;
     }
 
     .custom-slider-section {
@@ -550,12 +571,17 @@ img.image-block-split {
     .custom-slider-content p {
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3; /* number of lines to show */
+        -webkit-line-clamp: 2; /* number of lines to show */
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
     .top-bar-content:nth-child(2) {
         display: none;
+    }
+
+    .custom-slider-content p,
+    .custom-slider-content a {
+        font-size: 1rem;
     }
 }
