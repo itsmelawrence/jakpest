@@ -491,6 +491,10 @@ img.image-block-split {
         max-width: 100%;
     }
 
+    .hero-container {
+        background-position: 70% 50%;
+    }
+
     .hero-content-container {
         padding-top: 100px;
         display: flex;
@@ -511,6 +515,10 @@ img.image-block-split {
     .layout-section {
         flex-direction: column;
         margin: 50px 0;
+    }
+
+    .custom-slider-section {
+        row-gap: 50px;
     }
 
     .split-content {
